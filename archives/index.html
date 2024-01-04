@@ -337,6 +337,20 @@
   
   
 
+<% if (page.comments){ %>
+<section id="comment">
+  <h1 class="title"><%= __('comment') %></h1>
+
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="2e249781-5471-457e-9c83-802dd6ecb809"
+  data-page-id="<%= page.path %>"
+  data-page-url="<%= page.permalink %>"
+  data-page-title="<%= page.title %>"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+</section>
+<% } %>
 </div>
   </main>
 
